@@ -220,6 +220,11 @@ const Dashboard = () => {
     document.body.removeChild(link);
   }
 
+ function reset() {
+    setTransactions([]);
+  }
+    
+
   return (
     <div className="dashboard-container">
       <Header />
@@ -234,6 +239,7 @@ const Dashboard = () => {
             showExpenseModal={showExpenseModal}
             showIncomeModal={showIncomeModal}
             cardStyle={cardStyle}
+              reset={reset}
           />
 
           <AddExpenseModal
