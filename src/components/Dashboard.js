@@ -58,7 +58,7 @@ const Dashboard = () => {
     const spendingData = {};
 
     transactions.forEach((transaction) => {
-      const monthYear = moment(transaction.date).format("MMM YYYY");
+      const monthYear = moment(transaction.date).format("DD MMM YYYY");
       const tag = transaction.tag;
 
       if (transaction.type === "income") {
